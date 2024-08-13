@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+}
+
+.card-border {
+  border: solid 1px #e6e6e6;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
+}
+
+.page-header-tag {
+  border-radius: 6px;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.05);
+}
+
+.update-button {
+  appearance: button;
+  backface-visibility: hidden;
+  background-color: #232f3e;
+  border-radius: 6px;
+  border-width: 0;
+  box-shadow: rgba(50, 50, 93, 0.1) 0 0 0 1px inset,
+    rgba(50, 50, 93, 0.1) 0 2px 5px 0, rgba(0, 0, 0, 0.07) 0 1px 1px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-size: 100%;
+  margin: 0 0 0;
+  outline: none;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  transform: translateZ(0);
+  transition: all 0.2s, box-shadow 0.08s ease-in;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  text-align: center;
+  align-items: center;
+}
+
+.update-button:disabled {
+  cursor: default;
+}
+
+.update-button:focus {
+  box-shadow: rgba(50, 50, 93, 0.1) 0 0 0 1px inset,
+    rgba(50, 50, 93, 0.2) 0 6px 15px 0, rgba(0, 0, 0, 0.1) 0 2px 2px 0,
+    rgba(50, 151, 211, 0.3) 0 0 0 4px;
+}
+
+.order-tag-area {
+  background-color: #fafafa;
+}
+
+.order-img {
+  width: 36px;
+  height: 55px;
+  padding: 3px;
+  border: solid 1px #e6e6e6;
+  border-radius: 6px;
+}
+
+.order-tab {
+  cursor: pointer;
+}

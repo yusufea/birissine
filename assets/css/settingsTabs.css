@@ -1,0 +1,11 @@
+.change-tab-color {
+  background-color: #232f3e;
+  color: #fff;
+  border-radius: 6px;
+  padding: 8px;
+}
+
+.active-tab {
+  border-color: #232f3e; /* Aktif sekmenin arka plan rengi */
+  color: #161e28; /* Aktif sekmenin metin rengi */
+}

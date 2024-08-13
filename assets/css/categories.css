@@ -1,0 +1,269 @@
+* {
+  margin: 0;
+}
+
+.flex-justify-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #e6e6e6;
+  width: calc((100% / 4) - 11px);
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.card-img {
+  width: 100%;
+  object-fit: contain;
+  border-radius: 6px;
+  position: relative;
+}
+
+.card-down-side {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  justify-content: space-between;
+  padding-right: 12px;
+  padding-left: 12px;
+  padding-bottom: 12px;
+  word-break: break-word;
+}
+
+.card p {
+  font-size: 12px;
+}
+
+.card h5 {
+  font-size: 15px;
+}
+
+.card-price {
+  font-size: 15px;
+}
+
+.checked {
+  color: orange;
+}
+.none-checked {
+  color: #9999;
+}
+.add-favorite-icon {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background-color: white;
+  padding: 7px;
+  border-radius: 100%;
+  color: #8c8c8c;
+  transition: all 0.3s ease;
+}
+.add-favorite-icon:hover {
+  color: orange;
+}
+#dropdown-menu {
+  border: 1px solid #9999;
+  padding: 8px;
+  border-radius: 8px;
+}
+select:focus-visible {
+  outline: none;
+}
+.custom-select-wrapper {
+  position: relative;
+  user-select: none;
+  width: 200px;
+}
+
+.custom-select {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  border: 1px solid #9999;
+  padding: 5px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.custom-select-trigger {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  cursor: pointer;
+  text-align: left;
+}
+
+.trigger-text {
+  flex: 1;
+}
+
+.trigger-icon {
+  margin-left: 8px;
+  pointer-events: none; /* İkon tıklanamaz hale getirilir */
+}
+
+.custom-options {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: white;
+  border: 1px solid #999;
+  border-radius: 8px;
+  display: none;
+  flex-direction: column;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  margin-top: 5px;
+  overflow: hidden;
+}
+
+.custom-option {
+  padding: 8px;
+  cursor: pointer;
+  color: #333;
+}
+
+.custom-option:hover {
+  background: #f0f0f0;
+}
+
+.custom-select.open .custom-options {
+  display: flex;
+}
+
+.select-option-text {
+  color: #333;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.collapsible {
+  background-color: white;
+  color: #444;
+  cursor: pointer;
+  /* padding-top: 6px; */
+  padding-bottom: 12px;
+  padding-right: 4px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 14px;
+  border-bottom: 1px solid #ececec;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.collapsible:hover {
+  background-color: #fcfcfc;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+  padding: 0 0px;
+  display: none;
+  overflow: hidden;
+}
+
+.checkmark {
+  margin-left: 8px;
+}
+
+/* The slow way */
+.make-it-slow {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 0px 0px 0px,
+    rgba(0, 0, 0, 0.3) 0px 0px 0px 0px;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+/* Transition to a bigger shadow on hover */
+.make-it-slow:hover {
+  box-shadow: rgba(50, 50, 93, 0.13) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -3px;
+}
+
+/* The fast way */
+.make-it-fast {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+/* Pre-render the bigger shadow, but hide it */
+.make-it-fast::after {
+  box-shadow: rgba(50, 50, 93, 0.13) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -3px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* Transition to showing the bigger shadow on hover */
+.make-it-fast:hover::after {
+  opacity: 1;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 300, "GRAD" 0, "opsz" 24;
+}
+
+a {
+  text-decoration: none;
+}
+
+.different-color-design {
+  position: absolute;
+  bottom: 20px;
+  right: 12px;
+}
+
+.filter-input {
+  border: none;
+  outline: none;
+  width: calc(100% - 22px);
+  height: 23px;
+  padding: 4px 9px;
+  border: 1px solid #ededed;
+  border-radius: 5px;
+}
+
+.filter-input:focus {
+  border-color: #232f3e;
+}
+
+#hover-element {
+  background-color: white;
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  bottom: 0;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.other-color-img {
+  width: 44px;
+  height: 67px;
+  border: 1px solid #ededed;
+  border-radius: 3px;
+  /* padding: 1px; */
+}
+
+.other-color-img:hover {
+  border: 1px solid orange;
+}
+
+
+::placeholder {
+  color: rgb(175, 175, 175);
+  opacity: 1; /* Firefox */
+}
+
+::-ms-input-placeholder { /* Edge 12-18 */
+  color: gray;
+}

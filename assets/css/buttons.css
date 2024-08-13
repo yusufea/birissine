@@ -1,0 +1,64 @@
+@charset "UTF-8";
+
+button.button {
+    border: none;
+    background: none;
+    width: 100%;
+    padding: 11px 17px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: white;
+}
+
+button.button:hover {
+    cursor: pointer;
+}
+
+button.button-white {
+    background-color: white;
+    box-shadow: 1px 1px 4px 2px lightgrey;
+    color: black;
+}
+
+button.button-white:hover {
+    box-shadow: 1px 1px 4px 3px lightgrey;
+}
+
+button.button-black {
+    background-color: #232f3e;
+    color: white;
+}
+
+button.button.button-primary {
+    background-color: #0D6EFD;
+}
+
+button.button.button-primary:hover {
+    background-color: #0B5ED7;
+}
+
+button.button.button-danger {
+    background-color: #DC3545;
+}
+
+button.button.button-danger:hover {
+    background-color: #BB2D3B;
+}
+
+button.button.button-warning {
+    background-color: #f97316;
+    color: white;
+}
+
+button.button.button-warning:hover {
+    background-color: #ea580c;
+}
+
+button.button.button-general {
+    background-color: #232f3e;
+    color: white;
+}
+
+button.button.button-general:hover {
+    background-color: #1a242f;
+}

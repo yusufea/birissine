@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+}
+
+.product-detail-img {
+  width: 102px;
+  height: 154px;
+  border-radius: 6px;
+}
+
+.add-to-basket {
+  appearance: button;
+  backface-visibility: hidden;
+  background-color: #232f3e;
+  border-radius: 6px;
+  border-width: 0;
+  box-shadow: rgba(50, 50, 93, 0.1) 0 0 0 1px inset,
+    rgba(50, 50, 93, 0.1) 0 2px 5px 0, rgba(0, 0, 0, 0.07) 0 1px 1px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  height: 100%;
+  margin: 0 0 0;
+  outline: none;
+  overflow: hidden;
+  padding: 0 25px;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  transform: translateZ(0);
+  transition: all 0.2s, box-shadow 0.08s ease-in;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 106%;
+  text-align: center;
+  align-items: center;
+  padding-bottom: 4px;
+  margin-top: 1px;
+}
+
+.add-to-basket:disabled {
+  cursor: default;
+}
+
+.add-to-basket:focus {
+  box-shadow: rgba(50, 50, 93, 0.1) 0 0 0 1px inset,
+    rgba(50, 50, 93, 0.2) 0 6px 15px 0, rgba(0, 0, 0, 0.1) 0 2px 2px 0,
+    rgba(50, 151, 211, 0.3) 0 0 0 4px;
+}
+
+.add-to-favorite-second {
+  position: absolute;
+  top: 7px;
+  right: 5px;
+  background-color: white;
+  color: #8c8c8c;
+  padding: 4px;
+  border: solid 1px #e6e6e6;
+  border-radius: 100%;
+  transition: all 0.3s ease;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.add-to-favorite-second:hover {
+  color: orange;
+}
+
+.select-option-size {
+  color: #333;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+#dropdown-menu {
+  border: 1px solid #9999;
+  padding: 8px;
+  border-radius: 6px;
+  width: 45%;
+  height: 100%;
+}
+
+.featured-comment-tag {
+  background-color: #f3f3f3;
+  padding: 16px;
+  border-radius: 8px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  color: black;
+}
+
+#dropdown-comment-options-menu {
+  border: 1px solid #9999;
+  padding: 6px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  border-radius: 6px;
+}
+
+/* STAR */
+.checked {
+  color: rgb(255, 201, 101);
+}
+.none-checked {
+  color: #9999;
+}
+
+.sticky-left {
+  position: sticky;
+  top: 44px;
+  z-index: 2;
+}
+
+.sticky-left-back {
+  position: sticky;
+  top: 12px;
+  z-index: 2;
+}

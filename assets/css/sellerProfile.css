@@ -1,0 +1,138 @@
+.shop-information-card {
+  border: solid 1px #e6e6e6;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
+  padding: 24px;
+}
+
+.seller-profile-calender-icon {
+  background-color: #232f3e;
+  color: white;
+  border-radius: 9999px;
+  padding: 20px;
+}
+
+.tabs {
+  border: solid 1px #e6e6e6;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.05);
+  border-radius: 6px 6px 0px 0px;
+}
+
+.tab-content-area {
+  border: solid 1px #e6e6e6;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.05);
+  border-radius: 0px 0px 6px 6px;
+}
+
+.order-tab {
+  border-bottom: solid 2px transparent; /* Normal durumda şeffaf border */
+  transition: border-color 0.3s; /* Hover durumunda smooth transition */
+}
+
+.order-tab:hover {
+  border-bottom-color: #232f3e; /* Hover durumunda border rengini değiştir */
+}
+
+.selected-tab {
+  border-bottom: solid 2px #232f3e;
+}
+
+.product-reviews-container {
+  max-height: 700px;
+  overflow-y: auto;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #cdcdcd;
+  border-radius: 50px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #9f9f9f;
+  border-radius: 50px;
+}
+
+Handle on hover ::-webkit-scrollbar-thumb:hover {
+  background: #9f9f9f;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #646464;
+  border-radius: 50px;
+}
+
+.seller-review-thumb-img {
+  width: 30px;
+  border-radius: 4px;
+}
+
+.splide__arrow svg {
+  fill: rgb(195, 195, 195);
+  height: 2em;
+  width: 2em;
+}
+
+.splide__arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Slider 1 okları dışarıda */
+.slider-default .splide__arrow--prev {
+  left: 25px; /* Adjust as needed */
+}
+.slider-default .splide__arrow--next {
+  right: 25px; /* Adjust as needed */
+}
+
+/* Slider 2 okları içeride */
+.slider-carousel .splide__arrow--prev {
+  left: 7px; /* Adjust as needed */
+}
+.slider-carousel .splide__arrow--next {
+  right: 7px; /* Adjust as needed */
+}
+
+.comment-information-text {
+  overflow-y: auto;
+  height: 350px;
+}
+
+.comment-information-apply {
+  border: solid 1px #e6e6e6;
+  background-color: #232f3e;
+  width: 100%;
+  color: #fff;
+  padding: 12px;
+  border-radius: 6px;
+}
+
+.close-icon {
+  color: #aaa;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close-icon:hover,
+.close-icon:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.criter-text:hover {
+  color: #333;
+}
+.selected-tabs-border {
+  border-bottom: solid 2px #232f3e;
+}

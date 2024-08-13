@@ -1,0 +1,142 @@
+@charset "UTF-8";
+
+.container {
+  width: 80%;
+  max-width: 1200px; /* Maksimum genişlik belirleyin, isterseniz bu değeri değiştirebilirsiniz */
+  height: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  padding: 0 10px; /* Kenarlarda biraz boşluk bırakmak isterseniz */
+}
+
+
+.row {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+}
+
+.col {
+  width: 100%;
+  height: auto;
+}
+
+.col-1 {
+  width: calc((100% / 12));
+  height: auto;
+}
+
+.col-2 {
+  width: calc((100% / 6));
+  height: auto;
+}
+
+.col-3 {
+  width: calc((100% / 4));
+  height: auto;
+}
+
+.col-4 {
+  width: calc((100% / 3));
+  height: auto;
+}
+
+.col-5 {
+  width: calc(((100% / 12) * 5));
+  height: auto;
+}
+
+.col-6 {
+  width: calc((100% / 2));
+  height: auto;
+}
+
+.col-7 {
+  width: calc(((100% / 12) * 7));
+  height: auto;
+}
+
+.col-8 {
+  width: calc(((100% / 12) * 8));
+  height: auto;
+}
+
+.col-9 {
+  width: calc(((100% / 12) * 9));
+  height: auto;
+}
+
+.col-10 {
+  width: calc(((100% / 12) * 10));
+  height: auto;
+}
+
+.col-11 {
+  width: calc(((100% / 12) * 11));
+  height: auto;
+}
+
+.col-12 {
+  width: calc(100%);
+  height: auto;
+}
+
+/* FLEX */
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+/* GAP */
+.gap-1 {
+  gap: 4px;
+}
+
+.gap-1_5 {
+  gap: 6px;
+}
+
+.gap-2 {
+  gap: 8px;
+}
+
+.gap-2_5 {
+  gap: 10px;
+}
+
+.gap-3 {
+  gap: 12px;
+}
+
+.gap-3_5 {
+  gap: 14px;
+}
+
+.gap-4 {
+  gap: 16px;
+}
+
+.gap-5 {
+  gap: 20px;
+}
+
+.gap-6 {
+  gap: 24px;
+}
+
+.gap-7 {
+  gap: 28px;
+}
+
+.gap-8 {
+  gap: 32px;
+}
+
+.gap-9 {
+  gap: 36px;
+}
+
+.gap-10 {
+  gap: 40px;
+}

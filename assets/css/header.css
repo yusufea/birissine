@@ -1,0 +1,354 @@
+@charset "UTF-8";
+
+body {
+  background-color: #fff;
+}
+
+a {
+  color: #333;
+}
+
+/* Header header alt çizgi */
+/* #top-header {
+  border-bottom: 1px solid #cdcdcd;
+} */
+
+/* #top-header-left-menu {
+  font-size: 13px;
+  font-weight: bold;
+} */
+
+#top-header-right-menu {
+  font-size: 13px;
+  font-weight: bold;
+}
+
+#logo-header {
+  width: 140px;
+  /* height: 32px; */
+}
+
+#login-button,
+#cart-button {
+  border: none;
+  background: none;
+  padding: 9px;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+}
+
+#login-button:hover,
+#cart-button:hover {
+  color: orange;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#login-menu {
+  width: 165px;
+  height: fit-content;
+  background-color: white;
+  border-radius: 5px;
+  position: absolute;
+  z-index: 3;
+  top: 42px;
+  display: none;
+  border: solid 1px #e6e6e6;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.07);
+  border-radius: 6px;
+}
+
+#cart-menu {
+  width: 320px;
+  height: fit-content;
+  background-color: white;
+  border-radius: 5px;
+  position: absolute;
+  z-index: 3;
+  top: 42px;
+  display: none;
+  border: solid 1px #e6e6e6;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.07);
+  border-radius: 6px;
+}
+
+#login-button:hover + #login-menu {
+  display: block;
+}
+
+#login-menu:hover {
+  display: block;
+}
+
+#login-menu > ul > li {
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#login-menu > ul > li:hover {
+  background-color: #d3d3d3;
+  cursor: pointer;
+}
+
+#login-menu > ul > li:first-child {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+#login-menu > ul > li:last-child {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+/* -*---------------------------------------------------*- */
+
+#cart-button:hover + #cart-menu {
+  display: block;
+}
+
+#cart-menu:hover {
+  display: block;
+}
+
+.input {
+  width: 75%;
+}
+
+.card-border {
+  border: solid 1px #e6e6e6;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.05);
+  border-radius: 0px 0px 12px 12px;
+}
+
+.go-cart-button {
+  background-color: #232f3e;
+  border-radius: 6px;
+  border: solid 1px #e6e6e6;
+  color: white;
+  box-shadow: rgba(50, 50, 93, 0.1) 0 0 0 1px inset,
+    rgba(50, 50, 93, 0.1) 0 2px 5px 0, rgba(0, 0, 0, 0.07) 0 1px 1px 0;
+  text-align: center;
+}
+
+.finish-order-button {
+  background-color: white;
+  border-radius: 6px;
+  border: solid 1px #e6e6e6;
+  color: #333;
+  box-shadow: rgba(50, 50, 93, 0.1) 0 0 0 1px inset,
+    rgba(50, 50, 93, 0.1) 0 2px 5px 0, rgba(0, 0, 0, 0.07) 0 1px 1px 0;
+  text-align: center;
+}
+
+.cart-shopping-img {
+  width: 60px;
+  height: 85px;
+  border-radius: 6px;
+}
+
+.dot-icon {
+  width: 3px;
+  height: 3px;
+  background-color: #9999;
+  border-radius: 100%;
+}
+
+.search-bar-icon {
+  position: absolute;
+  top: 7.5px;
+  right: -10px;
+  color: #232f3e;
+  background-color: #f3f3f3;
+  border: none;
+}
+
+.header-line {
+  border-bottom: 1px solid #e8e8e8;
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+}
+
+.dark-list-bg {
+  background-color: #f5f5f5;
+}
+
+.light-list-bg {
+  background-color: #f9f9f9;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.subnav {
+  float: left;
+  overflow: hidden;
+}
+
+.subnav .subnavbtn {
+  border: none;
+  outline: none;
+  color: #333;
+  padding: 14px 16px;
+  background-color: inherit;
+  margin: 0;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.subnav:hover .subnavbtn:hover {
+  border-bottom: 3px solid #232f3e;
+}
+/* .subnav {
+  border-bottom: 3px solid #232f3e;
+} */
+
+.subnav:hover {
+  border-bottom: 2px solid #232f3e;
+}
+
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: #f9f9f9;
+  width: 100%;
+  z-index: 5;
+  height: 500px;
+  margin-top: 13px;
+  box-shadow: 37px 11px 22px -85px rgba(0, 0, 0, 0.19),
+    0px 6px 6px 0px rgba(0, 0, 0, 0.23);
+  border-top: 1px solid #e8e8e8 !important;
+}
+
+.subnav-content a {
+  float: left;
+  color: #333;
+  text-decoration: none;
+}
+
+/* .subnav-content a:hover {
+  background-color: #eee;
+  color: black;
+} */
+
+.subnav:hover .subnav-content {
+  display: block;
+}
+
+.subnav-content:hover {
+  display: block;
+}
+
+.overlay-active {
+  background-color: #d1d0d0;
+  z-index: 1000;
+  transition: 0.5s;
+}
+
+/* .overlay-active .card {
+  filter: blur(2px);
+} */
+
+.overlay-active main {
+  opacity: 0.1;
+}
+
+.header-search-bar:focus {
+  border-color: #232f3e;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  /* border: 2px; */
+}
+
+.relative {
+  position: relative;
+}
+
+.header-search-bar {
+  width: 100%;
+  border-radius: 6px;
+  transition: border-radius 0.3s;
+}
+
+.header-search-bar.no-bottom-radius {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.search-menu {
+  display: none; /* Başlangıçta gizli */
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  border: 1px solid #232f3e;
+  border-top: none; /* Üst kenarda sınır olmaması için */
+  box-shadow: 0px 11px 0px -120px rgba(0, 0, 0, 0.19),
+    0px 6px 6px 0px rgba(0, 0, 0, 0.23);
+  z-index: 1000;
+  border-radius: 0px 0px 6px 6px;
+}
+
+.search-menu.open {
+  display: block; /* Menü açıldığında görünür */
+}
+
+.word-card {
+  border: solid 1px #e6e6e6;
+  padding: 6px;
+  padding-right: 16px;
+  padding-left: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  position: relative;
+}
+
+.input-shadow {
+  box-shadow: 0px 11px 0px -120px rgba(0, 0, 0, 0.19),
+    0px 6px 6px 0px rgba(0, 0, 0, 0.23);
+}
+
+.subcategory-text:hover {
+  text-decoration: underline;
+}
+
+.form-header-input {
+  width: 70%;
+}
+
+@media only screen and (max-width: 1370px) {
+  .form-header-input {
+    width: 65%;
+  }
+
+  .header-right-area {
+    width: 25%;
+  }
+
+  .header-right-side-text {
+    font-size: 12px;
+  }
+
+  .subnav .subnavbtn {
+    font-size: 13px;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .subnav .subnavbtn {
+    font-size: 11px;
+  }
+}
+
+::placeholder {
+  color: rgb(175, 175, 175);
+  opacity: 1; /* Firefox */
+}
+
+::-ms-input-placeholder {
+  /* Edge 12-18 */
+  color: gray;
+}

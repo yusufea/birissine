@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+}
+
+.like-icon:hover {
+  cursor: pointer;
+  color: orange;
+}
+
+.report-icon:hover {
+  cursor: pointer;
+  color: orange;
+}
+
+.reply-area {
+  background-color: #f5f5f5;
+  padding: 12px;
+}
+.question-reply-area {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background-color: #f5f5f5;
+  padding: 15px;
+  border-radius: 12px;
+}
+
+.seller-logo-questions {
+  width: 44px;
+  height: 44px;
+  border-radius: 9999px;
+}
+
+.product-detail-img {
+  width: 102px;
+  height: 154px;
+  border-radius: 6px;
+}
+
+.add-to-basket {
+  appearance: button;
+  backface-visibility: hidden;
+  background-color: #232f3e;
+  border-radius: 6px;
+  border-width: 0;
+  box-shadow: rgba(50, 50, 93, 0.1) 0 0 0 1px inset,
+    rgba(50, 50, 93, 0.1) 0 2px 5px 0, rgba(0, 0, 0, 0.07) 0 1px 1px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-family: -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue",
+    Ubuntu, sans-serif;
+  font-size: 100%;
+  height: 100%;
+  line-height: 1.15;
+  margin: 0 0 0;
+  outline: none;
+  overflow: hidden;
+  padding: 0 25px;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  transform: translateZ(0);
+  transition: all 0.2s, box-shadow 0.08s ease-in;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 100%;
+  text-align: center;
+  align-items: center;
+  padding-bottom: 4px;
+}
+
+.add-to-basket:disabled {
+  cursor: default;
+}
+
+.add-to-basket:focus {
+  box-shadow: rgba(50, 50, 93, 0.1) 0 0 0 1px inset,
+    rgba(50, 50, 93, 0.2) 0 6px 15px 0, rgba(0, 0, 0, 0.1) 0 2px 2px 0,
+    rgba(50, 151, 211, 0.3) 0 0 0 4px;
+}
+
+#dropdown-menu {
+  border: 1px solid #9999;
+  padding: 8px;
+  border-radius: 6px;
+  width: 45%;
+  height: 100%;
+}
+
+.add-to-favorite-second {
+  background-color: white;
+  color: #8c8c8c;
+  padding: 6px;
+  border: solid 1px #e6e6e6;
+  border-radius: 100%;
+  transition: all 0.3s ease;
+}
+
+.add-to-favorite-second:hover {
+  color: orange;
+}
+
+#dropdown-question-options-menu {
+  border: 1px solid #9999;
+  padding: 8px;
+  border-radius: 6px;
+}

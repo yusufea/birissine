@@ -1,0 +1,21 @@
+.register-text {
+  border-bottom: 2px solid #232f3e !important;
+}
+
+.sex-card-male {
+  border-radius: 0px 6px 6px 0px;
+}
+
+.sex-card-female {
+  border-radius: 6px 0px 0px 6px;
+}
+
+.selected {
+  border: 1px solid #232f3e;
+  border-radius: 6px;
+}
+
+.other-register-card {
+  border: 1px solid #e6e6e6;
+  border-radius: 6px;
+}

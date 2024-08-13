@@ -1,0 +1,205 @@
+@charset "UTF-8";
+
+#check {
+  width: calc(100% - 34px - 2px);
+  height: fit-content;
+  padding: 17px;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+}
+
+#products {
+  width: calc(100% - 34px - 2px);
+  height: fit-content;
+  padding: 17px;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+}
+
+.product {
+  width: calc(100% - 22px - 2px);
+  height: fit-content;
+  padding: 11px;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+}
+
+.product-img {
+  width: 150px;
+  height: 150px;
+  background-color: lightgrey;
+  border-radius: 5px;
+}
+
+.productCount-add,
+.productCount-remove {
+  padding: 5px;
+  border-radius: 50%;
+  background-color: lightgrey;
+  cursor: pointer;
+}
+
+#address {
+  width: calc(100% - 34px - 2px);
+  height: fit-content;
+  padding: 17px;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+}
+
+#payment {
+  width: calc(100% - 34px - 2px);
+  height: fit-content;
+  padding: 17px;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+}
+
+#your-cards {
+  width: calc(100% - 34px - 2px);
+  padding: 11px 17px;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+}
+
+#product-summary {
+  width: calc(100% - 22px - 2px);
+  padding: 11px;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+}
+
+.sticky-summary-side {
+  position: sticky;
+  top: 17px;
+  z-index: 2;
+}
+
+.address {
+  border: solid 1px #e6e6e6;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.05);
+  border-radius: 6px 0px 0px 6px;
+  padding: 14px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.payment {
+  border: solid 1px #e6e6e6;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.05);
+  border-radius: 0px 6px 6px 0px;
+  padding: 14px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.active-tab {
+  border-bottom: solid 4px #232f3e;
+  background-color: #fff;
+}
+
+.add-new-address-side {
+  padding: 44px;
+  background-color: #fafafa;
+  border-radius: 6px;
+  border: solid 1px #e6e6e6;
+}
+
+.card-border {
+  border: solid 1px #e6e6e6;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
+}
+.align-items-center {
+  align-items: center;
+}
+
+.address-card {
+  transition: box-shadow 0.3s ease;
+}
+
+.delivery-address-area {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 16px;
+  justify-content: center;
+}
+
+.bill-address-area {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.address-card.selected {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Gölgelendirme efekti */
+}
+
+.address-cart-header {
+  background-color: #fafafa;
+  border-radius: 6px 6px 0px 0px;
+  border-bottom: solid 1px #e6e6e6;
+}
+
+.dropdown-menu {
+  border: 1px solid #e6e6e6;
+  padding: 8px;
+  border-radius: 6px;
+  outline: none;
+}
+
+textarea {
+  padding: 10px;
+  max-width: 100%;
+  line-height: 1.5;
+  border-radius: 5px;
+  border: 1px solid #e6e6e6;
+  outline: none;
+}
+
+.continue-shop-button {
+  background-color: #232f3e;
+  color: #fff;
+}
+
+table {
+  width: 85%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+th,
+td {
+  border: 1px solid #e5e5e5;
+}
+th,
+td {
+  padding: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align: left;
+}
+
+.rulement-area {
+  border-radius: 6px;
+  background-color: #fafafa;
+  padding: 20px;
+  height: 160px;
+  color: #999;
+}
+
+.shadow-effect {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+input[type="text"]:focus {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border: solid 1px #333;
+  transition: 0.5s;
+}
+
+#addressTextArea:focus {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border: solid 1px #333;
+  transition: 0.5s;
+}

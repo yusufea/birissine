@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+}
+
+.card-border {
+  border: solid 1px #e6e6e6;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
+}
+
+.heart-icon-overlay {
+  background-color: #8c8c8c;
+}
+
+.add-to-card {
+  background-color: #232f3e;
+  color: #fff;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #e6e6e6;
+  width: calc((100% / 4) - 11px);
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.card-img {
+  width: 100%;
+  object-fit: contain;
+  border-radius: 6px;
+  position: relative;
+}
+
+.card-down-side {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  justify-content: space-between;
+  padding-right: 12px;
+  padding-left: 12px;
+  padding-bottom: 12px;
+  word-break: break-word;
+  height: 100%;
+}
+
+.card p {
+  font-size: 12px;
+}
+
+.card h5 {
+  font-size: 15px;
+}
+
+.card-price {
+  font-size: 15px;
+}
+
+.checked {
+  color: orange;
+}
+.none-checked {
+  color: #9999;
+}
+
+.remove-favorite-icon {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background-color: white;
+  padding: 7px;
+  border-radius: 100%;
+  width: 1.5rem;
+  color: #333;
+}
+.remove-favorite-icon:hover {
+  color: orange;
+}
+
+#dropdown-menu {
+  border: 1px solid #9999;
+  padding: 8px;
+  border-radius: 8px;
+}
